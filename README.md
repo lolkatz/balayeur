@@ -1,11 +1,17 @@
-# balayage
+# Balayage
 
-# Install
+# Install and Setup
 (TODO)
 
 # Identifier les technologies et chercher si il y a des vulnérabilités associés
 
-# Tester CSRF
+# Tester manuel
+## CSRF
+## Tester CORS
+## Open redirect
+## Tout autres vulnérabilités acceptés dans le programme de prime aux bogues
+## Rate limiting
+
 ## (optionnel) amass
 plus pour external pentest?
 ## Tenable
@@ -26,3 +32,4 @@ Moins de résultat que Tenable mais quelques découvertes originales de temps en
 ## Burp
 - crawl (instead of crawl and audit?)
 - light -> deep
+ 
