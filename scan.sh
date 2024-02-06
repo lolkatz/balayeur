@@ -7,5 +7,5 @@ echo "Creating directory $DIRECTORY."
 mkdir $DIRECTORY
 nmap_scan
 dirsearch_scan
-#nikto_scan
+nikto_scan
 ssl_scan
