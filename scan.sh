@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#comment test
+
 source ./scan.lib
 
 DOMAIN=$1
