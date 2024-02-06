@@ -7,18 +7,17 @@ nmap_scan()
 dirsearch_scan()
 {
     # maybe pass extension / brute force extension?
-    dirsearch -u $DOMAIN -e php -o $DIRECTORY/dirsearch
+    dirsearch -u $DOMAIN -e php -o $DIRECTORY/dirsearch.txt
     echo "The results of dirsearch scan are stored in $DIRECTORY/dirsearch"
 }
 nikto_scan()
 {
-    # peut être modifier pour ajouter https devant
-    nikto -h https://$DOMAIN > $DIRECTORY/nikto
+    nikto -h https://$DOMAIN > $DIRECTORY/nikto.txt
     echo "The results of nikto parsing is stored in $DIRECTORY/nikto."
 }
 ssl_scan()
 {
     #sometime ask for user input xD
-    testssl $DOMAIN > $DIRECTORY/ssl
+    testssl $DOMAIN > $DIRECTORY/ssl.txt
     echo "The results of testssl parsing is stored in $DIRECTORY/ssl."
 }
