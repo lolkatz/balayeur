@@ -1,0 +1,24 @@
+#!/bin/bash
+nmap_scan()
+{
+    sudo nmap -Pn -sC -sV -O -p80,443 $DOMAIN > $DIRECTORY/nmap.txt
+    echo "The results of nmap scan are stored in $DIRECTORY/nmap"
+}
+dirsearch_scan()
+{
+    # maybe pass extension / brute force extension?
+    dirsearch -u $DOMAIN -e php -o $DIRECTORY/dirsearch
+    echo "The results of dirsearch scan are stored in $DIRECTORY/dirsearch"
+}
+nikto_scan()
+{
+    # peut être modifier pour ajouter https devant
+    nikto -h https://$DOMAIN > $DIRECTORY/nikto
+    echo "The results of nikto parsing is stored in $DIRECTORY/nikto."
+}
+ssl_scan()
+{
+    #sometime ask for user input xD
+    testssl $DOMAIN > $DIRECTORY/ssl
+    echo "The results of testssl parsing is stored in $DIRECTORY/ssl."
+}
