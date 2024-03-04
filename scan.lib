@@ -18,6 +18,6 @@ nikto_scan()
 ssl_scan()
 {
     #sometime ask for user input xD
-    testssl $DOMAIN > $DIRECTORY/ssl.txt
+    testssl $DOMAIN > $DIRECTORY/ssl
     echo "The results of testssl parsing is stored in $DIRECTORY/ssl."
 }
