@@ -1,6 +1,5 @@
 # Balayage
-Quelques outils intéressants à lancer sur un site lors d'un pentest web app (avec quelques petits ajouts pour pentest externe)
-- nmap (avec port 8009 pour trouver service AJP)
+Quelques outils intéressants à lancer sur un site lors d'un pentest web app ou bug bounty
 - wafw00f
 - nikto
 - testssl
