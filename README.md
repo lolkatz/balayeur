@@ -1,35 +1,18 @@
 # Balayage
+Quelques outils intéressants à lancer sur un site lors d'un pentest web app (avec quelques petits ajouts pour pentest externe)
+- nmap (avec port 8009 pour trouver service AJP)
+- wafw00f
+- nikto
+- testssl
+- dirsearch
+- waybackurl
+  
+# Installation sur un Kali
+```
+sudo apt install wafw00f dirsearch golang testssl.sh;
+go install github.com/tomnomnom/waybackurls@latest;
+```
 
-# Install and Setup
-(TODO)
-
-# Identifier les technologies et chercher si il y a des vulnérabilités associés
-
-# Tester manuel
-## CSRF
-## Tester CORS
-## Open redirect
-## Tout autres vulnérabilités acceptés dans le programme de prime aux bogues
-## Rate limiting
-
-## (optionnel) amass
-plus pour external pentest?
-## Tenable
-## nmap
-sudo nmap -Pn -sC -sV -O -p80,443 ip
-## nikto
-nikto -h url
-## (optionnel) sql map
-## testssl.sh
-## dirsearch 
-dirsearch -u $DOMAIN -o $DIRECTORY/dirsearch
-## (optionnel) CMS scanner
-- wpscan
-- droopescan
-- https://github.com/whoot/Typo3Scan
-## (optionnel) Acunetix
-Moins de résultat que Tenable mais quelques découvertes originales de temps en temps ainsi que moins de faux positifs
-## Burp
-- crawl (instead of crawl and audit?)
-- light -> deep
+# Lancement
+scan.sh *domain*
  
